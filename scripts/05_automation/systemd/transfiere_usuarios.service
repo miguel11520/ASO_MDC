@@ -1,0 +1,8 @@
+[Unit]
+Description=Servicio de transferencia de usuarios para ejercicio 3
+
+[Service]
+Type=oneshot
+ExecStart=scripts/05_automation/transfiere_usuarios.sh
+User=root
+Group=root

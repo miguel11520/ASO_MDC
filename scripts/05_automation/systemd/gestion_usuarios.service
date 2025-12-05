@@ -1,0 +1,8 @@
+[Unit]
+Description=Servicio de gestion de usuarios para ejercicio 3
+
+[Service]
+Type=oneshot
+ExecStart=scripts/05_automation/gestion_usuarios.sh
+User=root
+Group=root

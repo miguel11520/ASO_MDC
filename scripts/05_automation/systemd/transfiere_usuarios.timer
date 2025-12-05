@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer que ejecuta transfiere_usuarios.sh a las 6:00 y 13:30 de lunes a viernes
+
+[Timer]
+OnCalendar=Mon..Fri 6:00
+OnCalendar=Mon..Fri 13:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target

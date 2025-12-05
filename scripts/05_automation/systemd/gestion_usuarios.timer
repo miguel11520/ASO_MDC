@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer que ejecuta gestion_usuarios.sh a las 7:00 y 14:30 de lunes a viernes
+
+[Timer]
+OnCalendar=Mon..Fri 7:00
+OnCalendar=Mon..Fri 14:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target
